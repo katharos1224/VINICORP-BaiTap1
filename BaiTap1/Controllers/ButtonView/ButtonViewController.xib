@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonViewController" customModule="BaiTap1" customModuleProvider="target">
+            <connections>
+                <outlet property="changeColorButton" destination="sRK-Oa-APb" id="hVo-Ic-lrv"/>
+                <outlet property="countButton" destination="owU-d6-kOG" id="I1S-Zt-U7l"/>
+                <outlet property="emailField" destination="qYc-9x-npZ" id="ioN-G1-AGD"/>
+                <outlet property="numberField" destination="1RO-yU-K9c" id="Ggj-Yk-znp"/>
+                <outlet property="passwordField" destination="ekz-NT-CrA" id="mZL-Eh-up1"/>
+                <outlet property="scrollView" destination="HGh-4M-BvU" id="xcm-Mq-e7P"/>
+                <outlet property="usernameField" destination="1yE-W5-6Ho" id="KhL-bs-kce"/>
+                <outlet property="validatedAuthLabel" destination="K28-8A-xpH" id="abn-Qz-cle"/>
+                <outlet property="validatedEmailLabel" destination="JLk-yH-j6a" id="LK8-BW-le9"/>
+                <outlet property="validatedNumberLabel" destination="nzp-az-My2" id="RAd-pI-uDt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="CustomView" customModule="BaiTap1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGh-4M-BvU">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3g-j5-Dge" customClass="CustomView" customModule="BaiTap1" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="757"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sp6-Le-B3u">
+                                    <rect key="frame" x="16" y="16" width="361" height="725"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cm2-Yz-pEq" customClass="CustomView" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="184"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dxT-bd-K7r">
+                                                    <rect key="frame" x="16" y="16" width="183.33333333333334" height="152"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rk-6u-DRs" customClass="CustomButton" customModule="BaiTap1" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="134.33333333333334" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="9f4-Oj-YO4"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Normal Button"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRK-Oa-APb" customClass="CustomButton" customModule="BaiTap1" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="56" width="183.33333333333334" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="PU1-vF-Mc4"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Change Color Button"/>
+                                                            <connections>
+                                                                <action selector="didTapChangeColor" destination="-1" eventType="touchUpInside" id="7Xg-NN-0zt"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owU-d6-kOG" customClass="CustomButton" customModule="BaiTap1" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="112" width="125.33333333333333" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="NeR-v1-UeQ"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Count Button"/>
+                                                            <connections>
+                                                                <action selector="didTapCountButton" destination="-1" eventType="touchUpInside" id="J8a-0g-EBf"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="dxT-bd-K7r" secondAttribute="bottom" constant="16" id="F11-ac-oI9"/>
+                                                <constraint firstItem="dxT-bd-K7r" firstAttribute="top" secondItem="cm2-Yz-pEq" secondAttribute="top" constant="16" id="gA0-eD-WiY"/>
+                                                <constraint firstItem="dxT-bd-K7r" firstAttribute="centerY" secondItem="cm2-Yz-pEq" secondAttribute="centerY" id="vrJ-DY-7P1"/>
+                                                <constraint firstItem="dxT-bd-K7r" firstAttribute="leading" secondItem="cm2-Yz-pEq" secondAttribute="leading" constant="16" id="yqK-ku-h76"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7GD-hi-Gya">
+                                            <rect key="frame" x="0.0" y="200" width="361" height="525"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wId-b5-nwv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="142.33333333333334"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qYc-9x-npZ" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="361" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="Ply-rn-G2k"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="-1" id="2nu-Sl-Xpf"/>
+                                                            </connections>
+                                                        </textField>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLk-yH-j6a">
+                                                            <rect key="frame" x="0.0" y="66" width="361" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" systemColor="systemRedColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8S-di-mpV" customClass="CustomButton" customModule="BaiTap1" customModuleProvider="target">
+                                                            <rect key="frame" x="135.66666666666666" y="102.33333333333331" width="90" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="90" id="JRu-sx-yHI"/>
+                                                                <constraint firstAttribute="height" constant="40" id="vck-lN-PIm"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Check"/>
+                                                            <connections>
+                                                                <action selector="didTapCheckEmail" destination="-1" eventType="touchUpInside" id="I69-bc-Hxs"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="JLk-yH-j6a" firstAttribute="leading" secondItem="qYc-9x-npZ" secondAttribute="leading" id="DTe-zP-en8"/>
+                                                        <constraint firstItem="P8S-di-mpV" firstAttribute="centerX" secondItem="wId-b5-nwv" secondAttribute="centerX" id="IgZ-1F-k38"/>
+                                                        <constraint firstItem="qYc-9x-npZ" firstAttribute="width" secondItem="wId-b5-nwv" secondAttribute="width" id="WUS-pC-qva"/>
+                                                        <constraint firstItem="qYc-9x-npZ" firstAttribute="leading" secondItem="wId-b5-nwv" secondAttribute="leading" id="szb-PD-zx3"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vTO-53-5P5">
+                                                    <rect key="frame" x="0.0" y="158.33333333333331" width="361" height="142.33333333333331"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Numbers" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1RO-yU-K9c" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="361" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="XGr-8o-u9S"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="-1" id="sR1-SV-O9b"/>
+                                                            </connections>
+                                                        </textField>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzp-az-My2">
+                                                            <rect key="frame" x="0.0" y="66" width="361" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" systemColor="systemRedColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYo-HW-sev" customClass="CustomButton" customModule="BaiTap1" customModuleProvider="target">
+                                                            <rect key="frame" x="135.66666666666666" y="102.33333333333331" width="90" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="90" id="YTn-Ht-nKY"/>
+                                                                <constraint firstAttribute="height" constant="40" id="dDC-vb-cyQ"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Check"/>
+                                                            <connections>
+                                                                <action selector="didTapCheckNumber" destination="-1" eventType="touchUpInside" id="DxY-pi-fxt"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="nzp-az-My2" firstAttribute="leading" secondItem="1RO-yU-K9c" secondAttribute="leading" id="5yn-en-KUL"/>
+                                                        <constraint firstItem="GYo-HW-sev" firstAttribute="centerX" secondItem="vTO-53-5P5" secondAttribute="centerX" id="ExW-bS-u32"/>
+                                                        <constraint firstItem="1RO-yU-K9c" firstAttribute="width" secondItem="vTO-53-5P5" secondAttribute="width" id="GWf-BY-IAc"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eFj-X0-ZKw">
+                                                    <rect key="frame" x="0.0" y="316.66666666666663" width="361" height="208.33333333333337"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1yE-W5-6Ho" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="361" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="5Ao-CI-Rsz"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <textInputTraits key="textInputTraits" returnKeyType="continue"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="-1" id="kYY-nQ-ZvL"/>
+                                                            </connections>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwords" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ekz-NT-CrA" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="66" width="361" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="KHt-cu-c7s"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="-1" id="iYW-I7-TgR"/>
+                                                            </connections>
+                                                        </textField>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K28-8A-xpH">
+                                                            <rect key="frame" x="0.0" y="132" width="361" height="20.333333333333343"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" systemColor="systemRedColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYr-gi-oN1" customClass="CustomButton" customModule="BaiTap1" customModuleProvider="target">
+                                                            <rect key="frame" x="135.66666666666666" y="168.33333333333337" width="90" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="90" id="9nd-pG-z4e"/>
+                                                                <constraint firstAttribute="height" constant="40" id="hZe-WO-w4g"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                                            <connections>
+                                                                <action selector="didTapLogin" destination="-1" eventType="touchUpInside" id="SnN-gJ-4Z9"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="ekz-NT-CrA" firstAttribute="width" secondItem="1yE-W5-6Ho" secondAttribute="width" id="MDf-G5-hhR"/>
+                                                        <constraint firstItem="1yE-W5-6Ho" firstAttribute="width" secondItem="eFj-X0-ZKw" secondAttribute="width" id="iEA-Qw-JPl"/>
+                                                        <constraint firstItem="K28-8A-xpH" firstAttribute="leading" secondItem="ekz-NT-CrA" secondAttribute="leading" id="xC2-3i-6Uv"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="sp6-Le-B3u" firstAttribute="top" secondItem="f3g-j5-Dge" secondAttribute="top" constant="16" id="3Rb-6f-4DQ"/>
+                                <constraint firstAttribute="trailing" secondItem="sp6-Le-B3u" secondAttribute="trailing" constant="16" id="B7q-up-ZWq"/>
+                                <constraint firstAttribute="bottom" secondItem="sp6-Le-B3u" secondAttribute="bottom" constant="16" id="csZ-XY-nkT"/>
+                                <constraint firstItem="sp6-Le-B3u" firstAttribute="leading" secondItem="f3g-j5-Dge" secondAttribute="leading" constant="16" id="f2o-tT-Zlc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="f3g-j5-Dge" secondAttribute="bottom" id="LjG-ni-2sZ"/>
+                        <constraint firstItem="f3g-j5-Dge" firstAttribute="leading" secondItem="HGh-4M-BvU" secondAttribute="leading" id="PwJ-T0-2Rr"/>
+                        <constraint firstItem="f3g-j5-Dge" firstAttribute="top" secondItem="HGh-4M-BvU" secondAttribute="top" id="biY-1w-dwo"/>
+                        <constraint firstAttribute="trailing" secondItem="f3g-j5-Dge" secondAttribute="trailing" id="o3m-sR-oJN"/>
+                        <constraint firstItem="f3g-j5-Dge" firstAttribute="width" secondItem="HGh-4M-BvU" secondAttribute="width" id="rMc-3O-2Hj"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="HGh-4M-BvU" secondAttribute="leading" id="4LK-CV-PMn"/>
+                <constraint firstItem="HGh-4M-BvU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Hse-f8-1hU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="HGh-4M-BvU" secondAttribute="top" id="ZyU-i5-VzD"/>
+                <constraint firstItem="HGh-4M-BvU" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="nfe-BP-1L1"/>
+            </constraints>
+            <point key="canvasLocation" x="79" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

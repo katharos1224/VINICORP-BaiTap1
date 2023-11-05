@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputViewController" customModule="BaiTap1" customModuleProvider="target">
+            <connections>
+                <outlet property="botCenPaddingField" destination="paw-Yv-mOk" id="tfz-ka-qzx"/>
+                <outlet property="bottomImageField" destination="CuL-GX-4yh" id="GZO-TB-fto"/>
+                <outlet property="bottomPaddingField" destination="8vv-Ur-Vp5" id="Yin-va-vCd"/>
+                <outlet property="leftImageField" destination="gMm-dh-Wmo" id="zqc-DH-Mp5"/>
+                <outlet property="leftPaddingField" destination="M3M-LT-Re4" id="YEs-kl-iia"/>
+                <outlet property="rightImageField" destination="8YR-8t-iyC" id="eyB-Qm-a3Z"/>
+                <outlet property="rightPaddingField" destination="l1z-7K-9RX" id="MjH-88-37r"/>
+                <outlet property="scrollView" destination="pJs-y9-ITQ" id="IXI-dG-9AO"/>
+                <outlet property="topCenPaddingField" destination="36u-Fp-b25" id="nr9-Sr-pgf"/>
+                <outlet property="topImageField" destination="FsF-EQ-OxR" id="pXF-7W-w5b"/>
+                <outlet property="topPaddingField" destination="jiJ-ux-GR7" id="yfj-d0-VSm"/>
+                <outlet property="topRightPaddingField" destination="99E-Xl-Nil" id="Fd5-vZ-oJo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="CustomView" customModule="BaiTap1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJs-y9-ITQ">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zB-ai-GOa" customClass="CustomView" customModule="BaiTap1" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="1232"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oj5-zr-pcT">
+                                    <rect key="frame" x="8" y="8" width="377" height="1216"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with hint" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6mg-s5-HP5" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="Z9s-51-21b"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="ZWF-sn-6Jl"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with paddingStart" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="M3M-LT-Re4" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="68" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="4MB-He-1TQ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="t4e-P8-okc"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with paddingEnd" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="l1z-7K-9RX" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="136" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="LHx-k3-bht"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="xRl-ia-0C2"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with paddingTop" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jiJ-ux-GR7" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="204" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="qz1-1Y-nPc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="NgS-a2-fBN"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with paddingBottom" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8vv-Ur-Vp5" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="272" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="99k-fm-GMU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="4ep-2Y-xTP"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with paddingBottom Center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="paw-Yv-mOk" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="340" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="WuB-oc-5ig"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="YID-ib-RH4"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with paddingTop Right" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="99E-Xl-Nil" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="408" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="fMG-Gk-887"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="ZK2-b5-xZm"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with paddingTop Center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="36u-Fp-b25" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="476" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="L34-RG-bKj"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="gOS-nL-zkX"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with drawableStart" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gMm-dh-Wmo" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="544" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="beP-Jj-hmy"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="Yee-g6-HNP"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with drawableEnd" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8YR-8t-iyC" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="612" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="2ob-Kj-XmJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="WFP-gZ-3kN"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with drawableTop" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FsF-EQ-OxR" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="680" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="cus-fz-NZG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="Xoq-wm-rag"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with drawableBottom" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CuL-GX-4yh" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="748" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="Q2X-yq-b8n"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="0De-s3-bk0"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with action done" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MFb-fJ-dbX" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="816" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="5H3-Qw-gsD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="yz0-q3-UKg"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with action next" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7oL-GM-isz" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="884" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="qEj-ga-vDv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="F7N-VX-VWf"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with action search" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zcj-rg-3sO" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="952" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="gsr-Li-fTe"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="pbJ-BP-FzP"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with action send" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qkd-So-JOw" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="1020" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="twB-cl-bB2"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="send"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="q7J-ag-pTm"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with only number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="r0o-W3-o1E" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="1088" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="5Tg-nv-3Pi"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="0Uv-rM-rLB"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="edit text with email type" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ang-vy-cDS" customClass="CustomTextField" customModule="BaiTap1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="1156" width="377" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="Jww-Jo-9zg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="JpI-ME-wr5"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="oj5-zr-pcT" firstAttribute="leading" secondItem="9zB-ai-GOa" secondAttribute="leading" constant="8" id="CaL-Fw-SiP"/>
+                                <constraint firstAttribute="trailing" secondItem="oj5-zr-pcT" secondAttribute="trailing" constant="8" id="ISe-oX-mPg"/>
+                                <constraint firstItem="oj5-zr-pcT" firstAttribute="top" secondItem="9zB-ai-GOa" secondAttribute="top" constant="8" id="W7Z-aW-X1k"/>
+                                <constraint firstAttribute="bottom" secondItem="oj5-zr-pcT" secondAttribute="bottom" constant="8" id="esk-3f-ZXm"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="9zB-ai-GOa" firstAttribute="leading" secondItem="pJs-y9-ITQ" secondAttribute="leading" id="2n0-uf-UfV"/>
+                        <constraint firstItem="9zB-ai-GOa" firstAttribute="height" secondItem="pJs-y9-ITQ" secondAttribute="height" priority="250" id="5Ff-K1-LBv"/>
+                        <constraint firstItem="9zB-ai-GOa" firstAttribute="width" secondItem="pJs-y9-ITQ" secondAttribute="width" id="FyV-wM-pwo"/>
+                        <constraint firstAttribute="trailing" secondItem="9zB-ai-GOa" secondAttribute="trailing" id="aUN-a2-ni0"/>
+                        <constraint firstItem="9zB-ai-GOa" firstAttribute="top" secondItem="pJs-y9-ITQ" secondAttribute="top" id="hmf-65-ARi"/>
+                        <constraint firstAttribute="bottom" secondItem="9zB-ai-GOa" secondAttribute="bottom" id="mTz-ux-eGF"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pJs-y9-ITQ" secondAttribute="trailing" id="FmF-Xm-EJV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pJs-y9-ITQ" secondAttribute="bottom" id="LEn-XB-fag"/>
+                <constraint firstItem="pJs-y9-ITQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kww-XC-7mX"/>
+                <constraint firstItem="pJs-y9-ITQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vcZ-84-2K0"/>
+            </constraints>
+            <point key="canvasLocation" x="66" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
